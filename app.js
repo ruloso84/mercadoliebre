@@ -5,7 +5,7 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-app.listen(3030, () => console.log('Servidor corriendo en http://localhost:3030'));
+app.listen(process.env.PORT || 3030, () => console.log('Servidor corriendo en http://localhost:3030'));
 
 /* const publicPath = path.resolve(__dirname, './public'); */
 
